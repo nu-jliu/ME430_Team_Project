@@ -15,3 +15,5 @@ Repository for Team Project of ME430 `Mechatronic Systems`
  ![Assembly](./WeChat_Image_20200820022800.jpg?raw=true)
  ### Wiring
  ![Wiring](./WeChat_Image_20200820024227.jpg?raw=true)
+ ## Video Demo
+ [![Watch the video](https://img.youtube.com/vi/ZJTy7pAlewo/maxresdefault.jpg)](https://youtu.be/ZJTy7pAlewo)
