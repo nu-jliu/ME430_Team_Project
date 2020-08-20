@@ -44,11 +44,11 @@ Servo myServoTop4;
 
 SoftwareSerial bluetoothSerial(PIN_TX, PIN_RX);
 
-double sonarInput1;
+double sonarInput;
 double motorOutput;
 double setPoint = 50;
 
-PID myPid(&sonarInput1, &motorOutput, &setPoint, K_P, K_I, K_D, REVERSE);
+PID myPid(&sonarInput, &motorOutput, &setPoint, K_P, K_I, K_D, REVERSE);
 
 bool goingForward = true;
 
@@ -84,11 +84,10 @@ void setup() {
     bluetoothSerial.begin(9600);
 
     reset();
+    stop();
 }
 
 void loop() {
-
-    forward();
 
     String input = "";
 
@@ -131,15 +130,22 @@ void loop() {
     */
 
    // pid control
-    sonarInput1 = getSonarDistance(
-        PIN_SONAR_TRIG_1, 
-        PIN_SONAR_ECHO_1
-    );
+   if (goingForward)
+        sonarInput = getSonarDistance(
+            PIN_SONAR_TRIG_1, 
+            PIN_SONAR_ECHO_1
+        );
+    else
+        sonarInput = getSonarDistance(
+            PIN_SONAR_TRIG_2, 
+            PIN_SONAR_ECHO_2
+        );
+
     myPid.SetMode(AUTOMATIC);
     myPid.Compute();
 
     Serial.print("Distance = ");
-    Serial.println(sonarInput1);
+    Serial.println(sonarInput);
     Serial.print("Motor Speed = ");
     Serial.println(motorOutput);
 
@@ -214,14 +220,23 @@ void setMotorRight(bool forward) {
     }
 }
 
+void stop() {
+    digitalWrite(PIN_FORWARD_MOTOR_1, LOW);
+    digitalWrite(PIN_REVERSE_MOTOR_1, LOW);
+    digitalWrite(PIN_FORWARD_MOTOR_2, LOW);
+    digitalWrite(PIN_REVERSE_MOTOR_2, LOW);
+}
+
 void forward() {
     setMotorLeft(true);
     setMotorRight(true);
+    goingForward = true;
 }
 
 void reverse() {
     setMotorLeft(false);
     setMotorRight(false);
+    goingForward = false;
 }
 
 void left() {
