@@ -14,4 +14,4 @@ Repository for Team Project of ME430 `Mechatronic Systems`
  ### Assembly
  ![Assembly](./WeChat_Image_20200820022800.jpg?raw=true)
  ### Wiring
- ![Wiring](./WeChat_Image_20200820022800.jpg?raw=true)
+ ![Wiring](./WeChat_Image_20200820024227.jpg?raw=true)
