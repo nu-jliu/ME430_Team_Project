@@ -1,7 +1,7 @@
 # ME430 `Mechatronic Systems`
 Repository for Team Project of ME430 `Mechatronic Systems`
 ## Rose-Hulman Institute of Technology
- - Topic: `Excavator with Anti-collision Control`
+ - Topic: `Excavator with Anti-collision Control`, the excavator using PID controller to avoid potential collision with any obstacles
 ### Author
  - Allen Liu
  - Zhicheng Kai
@@ -9,4 +9,4 @@ Repository for Team Project of ME430 `Mechatronic Systems`
  ## Team Google Drive Link
  [Team Google Drive Folder](https://drive.google.com/drive/folders/1gOOvGnefZ6KSsOD7Iz33mTfya7JrbwNx?usp=sharing)
  ## Instruction
- The code for actual project is the `project_motor.ino` under `project_motor` folder
+ The code for actual project is the `project_motor.ino` file under the `project_motor` folder
