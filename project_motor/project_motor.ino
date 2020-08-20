@@ -88,7 +88,6 @@ void setup() {
 }
 
 void loop() {
-
     String input = "";
 
     if (bluetoothSerial.available() > 0) {
