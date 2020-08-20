@@ -11,5 +11,7 @@ Repository for Team Project of ME430 `Mechatronic Systems`
  ## Instruction
  The code for actual project is the `project_motor.ino` file under the `project_motor` folder
  ## Display
+ ### Assembly
  ![Assembly](./WeChat_Image_20200820022800.jpg?raw=true)
+ ### Wiring
  ![Wiring](./WeChat_Image_20200820022800.jpg?raw=true)
