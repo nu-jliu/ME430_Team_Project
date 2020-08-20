@@ -11,4 +11,4 @@ Repository for Team Project of ME430 `Mechatronic Systems`
  ## Instruction
  The code for actual project is the `project_motor.ino` file under the `project_motor` folder
  ## Assembly Display
- [Excavator Assembly](https://github.com/rhit-liuj9/ME430_Team_Project/Wechat_Image_20200820022800.jpg?raw=true)
+ ![Excavator Assembly](https://github.com/rhit-liuj9/ME430_Team_Project/Wechat_Image_20200820022800.jpg?raw=true)
