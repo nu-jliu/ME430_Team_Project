@@ -1,7 +1,8 @@
 # ME430 `Mechatronic Systems`
 Repository for Team Project of ME430 `Mechatronic Systems`
 ## Rose-Hulman Institute of Technology
- - Topic: `Excavator with Anti-collision Control`, the excavator using PID controller to avoid potential collision with any obstacles
+ - Topic: `Excavator with Anti-collision Control`
+   * the excavator using PID controller to avoid potential collision with any obstacles
 ### Author
  - Allen Liu
  - Zhicheng Kai
