@@ -9,7 +9,7 @@ Repository for Team Project of ME430 `Mechatronic Systems`
  ## Team Google Drive Link
  [Team Google Drive Folder](https://drive.google.com/drive/folders/1gOOvGnefZ6KSsOD7Iz33mTfya7JrbwNx?usp=sharing)
  ## Instruction
- The code for actual project is the `project_motor.ino` file under the `project_motor` folder
+ The code used by the microcontroller is the `project_motor.ino` file under the `project_motor` folder
  ## Display
  ### Assembly
  ![Assembly](./WeChat_Image_20200820022800.jpg?raw=true)
